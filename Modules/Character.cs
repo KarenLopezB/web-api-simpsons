@@ -1,8 +1,12 @@
+using System;
+
 namespace web_api_simpsons.Modules
 {
 
     public class Character
     {
+        Int64 id;
+
         string firstName;
         string secondName;
         string lastName;
@@ -18,8 +22,9 @@ namespace web_api_simpsons.Modules
 
         public Character(){}
 
-        public Character(string firstName, string secondName, string lastName, string nickName, int age, string gender, string birthDate, string photo, string ocupation, string description)
+        public Character(Int64 id, string firstName, string secondName, string lastName, string nickName, int age, string gender, string birthDate, string photo, string ocupation, string description)
         {
+            this.id = id;
             this.firstName = firstName;
             this.secondName = secondName;
             this.lastName = lastName;
@@ -81,6 +86,11 @@ namespace web_api_simpsons.Modules
         { 
             get => description; 
             set => description = value; 
+        }
+        public Int64 Id 
+        { 
+            get => id; 
+            set => id = value; 
         }
 
     }

@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karen\\documents\\web-api-simpsons\\web-api-simpsons.csproj",
+      "projectUniqueName": "C:\\Users\\Karen\\documents\\progra_hiper\\web-api-simpsons\\web-api-simpsons.csproj",
       "projectName": "web-api-simpsons",
-      "projectPath": "C:\\Users\\Karen\\documents\\web-api-simpsons\\web-api-simpsons.csproj",
+      "projectPath": "C:\\Users\\Karen\\documents\\progra_hiper\\web-api-simpsons\\web-api-simpsons.csproj",
       "packagesPath": "C:\\Users\\Karen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karen\\documents\\web-api-simpsons\\obj\\",
+      "outputPath": "C:\\Users\\Karen\\documents\\progra_hiper\\web-api-simpsons\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
