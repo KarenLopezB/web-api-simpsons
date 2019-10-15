@@ -28,7 +28,6 @@ namespace web_api_simpsons.Controllers
                 BirthDate = "12 de Mayo de 1956",
                 Ocupation = "Inspector de seguridad de la planta de energía nuclear de Springfield.",
                 Description = "Esposo de Marge y padre de Bart, Lisa y Maggie Simpson.",
-                Photo = "http://static.t13.cl/images/sizes/1200x675/1455720735-19-homer.jpg",
             },
         
 
@@ -41,8 +40,7 @@ namespace web_api_simpsons.Controllers
                 Gender = "Femenino",
                 BirthDate = "19 de Noviembre de 1954",
                 Ocupation = "Ama de casa",
-                Description = "Esposa de Homero, Madre de la familia Simpson.",
-                Photo = "http://pluspng.com/img-png/marge-simpson-hd-png-marge-simpson-2-png-1220.png",         
+                Description = "Esposa de Homero, Madre de la familia Simpson.",      
             },
 
             new Character{
@@ -54,8 +52,7 @@ namespace web_api_simpsons.Controllers
                 Gender = "Masculino",
                 BirthDate = "13 de Diciembre de 1981",
                 Ocupation = "Estudiante de la escuela primaria (cuarto grado) de Springfield.",
-                Description = "Hermano de Lisa y Maggie Simpson.",
-                Photo = "https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png",         
+                Description = "Hermano de Lisa y Maggie Simpson.",       
             },
 
             new Character{
@@ -66,8 +63,7 @@ namespace web_api_simpsons.Controllers
                 Gender = "Femenino",
                 BirthDate = "1984",
                 Ocupation = "Estudiante de la escuela primaria de Springfield.",
-                Description = "Hermana de Bart y Maggie Simpsons.",
-                Photo = "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Lisa_Simpson.png/220px-Lisa_Simpson.png",         
+                Description = "Hermana de Bart y Maggie Simpsons.",   
             },
 
             new Character{
@@ -78,8 +74,7 @@ namespace web_api_simpsons.Controllers
                 Age = 1, 
                 Gender = "Femenino",
                 BirthDate = "1991",
-                Description = "Hermana de Bart y Lisa Simpson.",
-                Photo = "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Maggie_Simpson.png/220px-Maggie_Simpson.png",         
+                Description = "Hermana de Bart y Lisa Simpson.",    
             },
 
             new Character{
@@ -90,8 +85,7 @@ namespace web_api_simpsons.Controllers
                 Gender = "Masculino",
                 BirthDate = "1903",
                 Ocupation = "Dueño de la Central nuclear de Springfield.",
-                Description = "Es el ciudadano más rico, poderoso y anciano de Springfield, propietario de la Planta de energía nuclear de Springfield y por lo tanto jefe de Homero Simpson.",
-                Photo = "",         
+                Description = "Es el ciudadano más rico, poderoso y anciano de Springfield, propietario de la Planta de energía nuclear de Springfield y por lo tanto jefe de Homero Simpson.",         
             },
 
             new Character{
@@ -101,8 +95,7 @@ namespace web_api_simpsons.Controllers
                 Age = 10, 
                 Gender = "Marculino",
                 Ocupation = "Estudiante de la escuela primaria (cuarto grado) de Springfield.",
-                Description = "Es compañero de Bart Simpson en la clase de la profesora Edna Krabappel y secretamente está muy enamorado de Lisa y sueña llegar a adulto y cortejarla para luego casarse.",
-                Photo = "",         
+                Description = "Es compañero de Bart Simpson en la clase de la profesora Edna Krabappel y secretamente está muy enamorado de Lisa y sueña llegar a adulto y cortejarla para luego casarse.",        
             },
         };
 
@@ -135,7 +128,14 @@ namespace web_api_simpsons.Controllers
                 Character character = new Character
                 {
                     Id = reader.GetInt64(reader.GetOrdinal("id")),
-                    FirstName = reader.GetString(reader.GetOrdinal("firstName"))
+                    FirstName = reader.GetString(reader.GetOrdinal("firstName")),
+                    SecondName = reader.GetString(reader.GetOrdinal("secondName")),
+                    LastName = reader.GetString(reader.GetOrdinal("lastName")),
+                    NickName = reader.GetString(reader.GetOrdinal("nickName")),
+                    //Age = reader.Get(reader.GetOrdinal("age")),
+                    Gender = reader.GetString(reader.GetOrdinal("gender")),
+                    BirthDate = reader.GetString(reader.GetOrdinal("birthDate")),
+
                 };
                 characters.Add(character);
             }

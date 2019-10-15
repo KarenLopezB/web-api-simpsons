@@ -16,7 +16,6 @@ namespace web_api_simpsons.Modules
         //int weight;
         string gender;
         string birthDate;
-        string photo;
         string ocupation;
         string description;
 
@@ -32,7 +31,6 @@ namespace web_api_simpsons.Modules
             this.age = age;
             this.gender = gender;
             this.birthDate = birthDate;
-            this.photo = photo;
             this.ocupation = ocupation;
             this.description = description;
         }
@@ -71,11 +69,6 @@ namespace web_api_simpsons.Modules
         { 
             get => birthDate; 
             set => birthDate = value; 
-        }
-        public string Photo 
-        { 
-            get => photo; 
-            set => photo = value; 
         }
         public string Ocupation 
         { 
