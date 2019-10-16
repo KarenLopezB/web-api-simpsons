@@ -131,10 +131,10 @@ namespace web_api_simpsons.Controllers
                     FirstName = reader.GetString(reader.GetOrdinal("firstName")),
                     SecondName = reader.GetString(reader.GetOrdinal("secondName")),
                     LastName = reader.GetString(reader.GetOrdinal("lastName")),
-                    NickName = reader.GetString(reader.GetOrdinal("nickName")),
-                    //Age = reader.Get(reader.GetOrdinal("age")),
-                    Gender = reader.GetString(reader.GetOrdinal("gender")),
-                    BirthDate = reader.GetString(reader.GetOrdinal("birthDate")),
+                    //NickName = reader.GetString(reader.GetOrdinal("nickName")),
+                    //Age = reader.GetInt32(reader.GetOrdinal("age")),
+                    //Gender = reader.GetString(reader.GetOrdinal("gender")),
+                    //BirthDate = reader.GetString(reader.GetOrdinal("birthDate")),
 
                 };
                 characters.Add(character);
